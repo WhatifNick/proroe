@@ -1535,27 +1535,27 @@ fieldset:disabled a.btn {
   pointer-events: none; }
 
 .btn-primary {
-  color: #212529;
-  background-color: #ffff00;
+  color: #000000;
+  background-color: white;
   border-color: #ffff00; }
   .btn-primary:hover {
-    color: #212529;
-    background-color: #d9d900;
-    border-color: #cccc00; }
-  .btn-primary:focus, .btn-primary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(255, 255, 0, 0.5); }
+    color: #000000;
+    background-color: #ffff00;
+    border-color: white; }
+  /* .btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 0, 0.5); } */
   .btn-primary.disabled, .btn-primary:disabled {
-    color: #212529;
+    color: #000000;
     background-color: #ffff00;
     border-color: #ffff00; }
   .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle {
-    color: #212529;
+    color: #000000;
     background-color: #cccc00;
     border-color: #bfbf00; }
-    .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+    /* .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-primary.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(255, 255, 0, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(255, 255, 0, 0.5);} */
 
 .btn-secondary {
   color: #ffffff;
@@ -1727,8 +1727,8 @@ fieldset:disabled a.btn {
     color: #212529;
     background-color: #ffff00;
     border-color: #ffff00; }
-  .btn-outline-primary:focus, .btn-outline-primary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(255, 255, 0, 0.5); }
+  /* .btn-outline-primary:focus, .btn-outline-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 0, 0.5); } */
   .btn-outline-primary.disabled, .btn-outline-primary:disabled {
     color: #ffff00;
     background-color: transparent; }
@@ -1737,9 +1737,9 @@ fieldset:disabled a.btn {
     color: #212529;
     background-color: #ffff00;
     border-color: #ffff00; }
-    .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+    /* .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-primary.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(255, 255, 0, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(255, 255, 0, 0.5);} */
 
 .btn-outline-secondary {
   color: #0000ff;
@@ -5010,8 +5010,8 @@ Custom CSS
   background-color: #ffff00;
   color: #000000; }
 
-a:not(.heading-brand) {
-  font-weight: 500; }
+/* a:not(.heading-brand) {
+  font-weight: 500; } */
 
 .font-weight-medium {
   font-weight: 500; }
@@ -5030,7 +5030,8 @@ a:not(.heading-brand) {
 
 /* Buttons */
 .btn {
-  box-shadow: 0 4px 6px rgba(255, 255, 0, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); }
+  /* box-shadow: 0 4px 6px rgba(255, 255, 0, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); */
+}
   .btn:active, .btn:focus, .btn:focus {
     box-shadow: none !important; }
 
@@ -5039,8 +5040,8 @@ a:not(.heading-brand) {
   font-weight: 700; }
 
 /*Feature Grid*/
-.feature-grid {
-  margin-top: 3rem; }
+/* .feature-grid {
+ } */
   .feature-grid .media {
     display: -ms-flexbox;
     display: flex;
@@ -5069,25 +5070,33 @@ footer a {
 /* Icon Boxes */
 .icon-box {
   position: relative;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   display: inline-block;
   vertical-align: middle;
   background-color: #ffffff;
   margin-right: 1rem;
-  color: #5cc72a; }
+  color: #000000; }
   .icon-box .icon-box-inner {
+    font-weight: 700;
+    font-size: 24px;
+    width: inherit;
+    height: inherit;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
         flex-direction: row;
     -ms-flex-align: center;
         align-items: center;
+    -ms-justify-content: center;
+        justify-content: center;
     padding: 1rem; }
 
 /*Gradients*/
 .bg-gradient {
-  /* background: linear-gradient(white, black); */
-  background: white;
+  background: linear-gradient(white, #00e5ff);
+  /* background: white; */
 }
 
 /*Code Window*/
@@ -5281,4 +5290,13 @@ pre[class*="language-"].line-numbers > code {
 
 .copy-button, .mail-button {
   margin: 0 6px;
+}
+
+.pp-link {
+  font-weight: 500;
+}
+
+.hashtag {
+  color: #ffff00;
+  text-shadow: 1px 1px black;
 }
